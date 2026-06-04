@@ -3,6 +3,15 @@
 Machine-Learning Surrogate Models for Temperature- and Size-Dependent Magnetic Constitutive Relations
 
 This repository provides the dataset, source code, benchmarking workflow, and physics-analysis tools.
+
+<p align="center">
+  <img src="workflowml.jpg" width="900">
+</p>
+
+<p align="center">
+<b>Figure 1.</b> Overview of the MagSurrogate framework, including atomistic data generation, machine-learning benchmarking, surrogate-model construction, finite-size scaling analysis, and universal scaling collapse.
+</p>
+
 ---
 
 ## Overview
@@ -92,5 +101,5 @@ This project is released under the MIT License.
 
 Komkrit Chooruang
 
-Department of Electrical Engineering, Faculty of Engineering, 
+Department of Electrical Engineering, Faculty of Engineering,  
 Nakhon Phanom University, Nakhon Phanom 48000, Thailand.
