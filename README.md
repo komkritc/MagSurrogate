@@ -2,12 +2,7 @@
 
 Machine-Learning Surrogate Models for Temperature- and Size-Dependent Magnetic Constitutive Relations
 
-This repository provides the dataset, source code, benchmarking workflow, and physics-analysis tools accompanying the paper:
-
-> Komkrit Chooruang et al.,
-> "Machine-Learning Surrogate Models for Temperature- and Size-Dependent Magnetic Constitutive Relations",
-> Computer Physics Communications, 2026.
-
+This repository provides the dataset, source code, benchmarking workflow, and physics-analysis tools.
 ---
 
 ## Overview
