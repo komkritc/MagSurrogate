@@ -1,6 +1,6 @@
 # MagSurrogate
 
-Machine-Learning Surrogate Models for Temperature- and Size-Dependent Magnetic Constitutive Relations
+Machine-Learning Surrogate Models:
 
 This repository provides the dataset, source code, benchmarking workflow, and physics-analysis tools.
 
@@ -11,6 +11,21 @@ This repository provides the dataset, source code, benchmarking workflow, and ph
 <p align="center">
 <b>Figure 1.</b> Overview of the MagSurrogate framework, including atomistic data generation, machine-learning benchmarking, surrogate-model construction, finite-size scaling analysis, and universal scaling collapse.
 </p>
+
+## Objective
+
+Atomistic spin simulations provide highly accurate predictions of finite-temperature magnetic properties, but they are computationally expensive when large parameter sweeps or multiscale simulations are required. For FePt nanograins, evaluating temperature-dependent constitutive relations across multiple grain sizes may require thousands of individual simulations, resulting in substantial computational cost.
+
+The objective of MagSurrogate is to develop accurate and computationally efficient machine-learning surrogate models capable of predicting key magnetic constitutive relations directly from temperature and grain size. The framework aims to:
+
+- Reduce computational cost compared with conventional atomistic simulations.
+- Benchmark classical interpolation methods against modern machine-learning approaches.
+- Evaluate generalization performance on previously unseen grain sizes using Leave-One-Diameter-Out Cross Validation (LODO-CV).
+- Predict equilibrium magnetization, longitudinal susceptibility, and transverse susceptibility with high accuracy.
+- Extract physically meaningful quantities such as the Curie temperature.
+- Reproduce finite-size scaling behavior and universal scaling-collapse relations directly from surrogate-model predictions.
+
+By combining machine learning with established finite-size scaling theory, MagSurrogate provides a practical framework for accelerating magnetic materials research while preserving physically meaningful behavior.
 
 ---
 
