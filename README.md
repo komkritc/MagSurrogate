@@ -98,10 +98,46 @@ pip install -r requirements.txt
 
 ## Usage
 
-Run the complete workflow:
+### Step 1: Machine-Learning Benchmarking
+
+Run the benchmarking workflow:
 
 ```bash
-python run_all.py
+python ml_benchmarking.py
+```
+
+This script performs:
+
+- Polynomial Regression (Order 9)
+- Cubic Spline Interpolation
+- Random Forest (RF)
+- Gradient Boosting (GB)
+- XGBoost (XGB)
+- K-Nearest Neighbor (KNN)
+- Leave-One-Diameter-Out Cross Validation (LODO-CV)
+- Hyperparameter optimization
+- Benchmark figure generation
+
+### Step 2: Finite-Size Scaling Analysis
+
+Run the finite-size scaling workflow:
+
+```bash
+python ml_fss.py
+```
+
+This script:
+
+- Trains the final Random Forest surrogate model
+- Predicts magnetic constitutive relations
+- Extracts Curie temperatures
+- Performs finite-size scaling analysis
+- Performs universal scaling-collapse analysis
+
+All generated CSV files and figures are saved in:
+
+```text
+results/
 ```
 
 ---
