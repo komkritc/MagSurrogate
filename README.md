@@ -20,7 +20,7 @@ The objective of MagSurrogate is to develop accurate and computationally efficie
 
 - Reduce computational cost compared with conventional atomistic simulations.
 - Benchmark classical interpolation methods against modern machine-learning approaches.
-- Evaluate generalization performance on previously unseen grain sizes using Leave-One-Diameter-Out Cross Validation (LODO-CV).
+- Evaluate generalization performance on previously unseen grain sizes using Leave-One-Dataset-Out Cross Validation (LODO-CV).
 - Predict equilibrium magnetization, longitudinal susceptibility, and transverse susceptibility with high accuracy.
 - Extract physically meaningful quantities such as the Curie temperature.
 - Reproduce finite-size scaling behavior and universal scaling-collapse relations directly from surrogate-model predictions.
@@ -44,7 +44,7 @@ The repository includes:
 
 The framework supports:
 
-- Leave-One-Diameter-Out Cross Validation (LODO-CV)
+- Leave-One-Dataset-Out Cross Validation (LODO-CV)
 - Unseen geometry generalization analysis
 - Curie temperature extraction
 - Finite-size scaling analysis
@@ -114,7 +114,7 @@ This script performs:
 - Gradient Boosting (GB)
 - XGBoost (XGB)
 - K-Nearest Neighbor (KNN)
-- Leave-One-Diameter-Out Cross Validation (LODO-CV)
+- Leave-One-Dataset-Out Cross Validation (LODO-CV)
 - Hyperparameter optimization
 - Benchmark figure generation
 
