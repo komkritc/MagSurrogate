@@ -5,8 +5,6 @@ Comparison of relaxation dynamics of one FePt grain (manuscript Sec. 5.4, Figs 9
 m_e(T), χ∥(T), χ⊥(T) come from the RF surrogate look-up table. The test checks the RF-derived constitutive relations
 in a dynamical setting. It covers the investigated conditions only.
 
-There are two separate parts. Only part B runs from this repository.
-
 ## A. Simulation generation (needs external executables; not run here)
 
 Neither VAMPIRE nor MARS source code or binaries are distributed here. VAMPIRE is open source
@@ -78,16 +76,3 @@ The macrospin damping model is exact only for a noiseless macrospin of constant 
 
 α_eff is **fitted**, not an input (α₀ = 0.1 in both codes). Its rise with temperature is a simulation result; the
 analytical curve is an independent comparison, not a fit.
-
-### Discrepancies
-
-* The manuscript text and Fig. 10 caption describe 50 seeds at 400 K; the stored 400 K data hold 100 seeds per code.
-  `results/dynamics/summary_per_temperature_first50seeds.csv` and `seed_count_sensitivity.csv` give the 50-seed values.
-* The VAMPIRE and MARS-RF runs used T_c = 639 K (100-seed batch) and 665 K (earlier runs) in places; which value the
-  stored trace sets used is partly unverified (`documentation/01_source_integration_report.md`).
-
-### Redistribution
-
-The raw traces are the authors' own simulation output, but they were produced with third-party codes and the authors have
-not yet confirmed that publishing them is acceptable. They are therefore **not** staged for commit. To publish them, remove
-the two `dynamical_validation/data/{vampire,marsrf}/` lines from `.gitignore`.
