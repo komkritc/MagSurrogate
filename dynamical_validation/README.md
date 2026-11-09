@@ -56,14 +56,6 @@ python dynamical_validation/analysis/analyse_dynamics_sample_size.py   # 50- ver
 
 The macrospin damping model is exact only for a noiseless macrospin of constant |m|, so at T > 0 it is an approximation.
 
-### Data (`data/`)
-
-* `MANIFEST.csv`: 502 traces (0 K: 1 + 1; 100, 200, 300 K: 50 + 50 each; 400 K: 100 + 100) with SHA-256 of the original files.
-* `vampire/`, `marsrf/`: gzip-compressed traces, byte-for-byte after decompression. **Git-ignored** until the authors
-  confirm they may redistribute them (see below). Without them, `reproduce_all.py` reports the dynamics stage as SKIPPED and
-  uses the committed `results/dynamics/*.csv`.
-* `CHECKSUMS.sha256`, `CHECKSUMS_traces.sha256`: `cd dynamical_validation/data && sha256sum -c CHECKSUMS_traces.sha256`.
-
 ### Results as regenerated from the stored traces
 
 | T (K) | seeds | α_eff VAMPIRE (mean ± SEM) | α_eff MARS-RF (mean ± SEM) | f_res VAMPIRE / MARS-RF (THz) |
