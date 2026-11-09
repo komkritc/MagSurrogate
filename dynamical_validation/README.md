@@ -3,7 +3,7 @@
 Comparison of relaxation dynamics of one FePt grain (manuscript Sec. 5.4, Figs 9-10): atomistic spin dynamics
 (**VAMPIRE**, LLG, constant damping α₀ = 0.1) against a single-spin Landau-Lifshitz-Bloch model (**MARS-RF**) whose
 m_e(T), χ∥(T), χ⊥(T) come from the RF surrogate look-up table. The test checks the RF-derived constitutive relations
-in a dynamical setting. It covers the investigated conditions only.
+in a dynamical setting. 
 
 ## A. Simulation generation (needs external executables; not run here)
 
